@@ -9,6 +9,13 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/api/artists', (req, res) => {
+    res.send([
+        "JB",
+        "Beyonce",
+    ]);
+});
+
 // Starten van de server en op welke port de server moet luisteren
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
